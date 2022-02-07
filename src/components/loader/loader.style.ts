@@ -1,8 +1,9 @@
 import styled from 'styled-components';
+import {Colors} from '../../constans/theme';
 
 
 export const LoaderContainer = styled.div`
-  color: #ffffff;
+  color: ${Colors.green};
   font-size: 15px;
   margin: 80px auto;
   position: relative;
