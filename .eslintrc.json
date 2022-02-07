@@ -1,0 +1,26 @@
+{
+  "root": true,
+  "parser": "@typescript-eslint/parser",
+  "plugins": [
+    "react",
+    "@typescript-eslint"
+  ],
+  "extends": ["google"],
+  "rules": {
+    "valid-jsdoc": "off",
+    "no-unused-vars": "error",
+    "@typescript-eslint/no-unused-vars": ["error"],
+    "max-len": [
+      "error",
+      {
+        "code": 120
+      }
+    ],
+    "no-mixed-spaces-and-tabs": "error",
+    "no-console": "off",
+    "quotes": [2, "single", { "avoidEscape": true }],
+    "linebreak-style": 0,
+    "no-duplicate-imports": "error"
+  }
+}
+
