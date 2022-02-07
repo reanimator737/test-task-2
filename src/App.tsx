@@ -18,12 +18,14 @@ function App() {
   useEffect(() => {
     dispatch(getInfoFromContract());
   }, []);
-  ethersData?.map((list) => (
+
+  const CategoryLists = ethersData?.map((list) => (
     <CategoryList
       key={list.groupName}
       dataObjectArray={list.dataObjectArray}
       groupName={list.groupName}/>
   ));
+
   return (
     <>
       <GlobalStyles />
@@ -33,7 +35,7 @@ function App() {
           All Indeces
         </h1>
         {ethersData ?
-          <Loader/> :
+          CategoryLists :
           <Loader/>}
       </MainContainer>
     </>
